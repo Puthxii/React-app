@@ -23,7 +23,7 @@ class App extends Component {
           <Containers>
             <Header></Header>
             <Route exact path="/" component={Content} />
-            <Route path="/abiliy" component={ability} />
+            <Route path="/ability" component={ability} />
             <Route path="/education" component={education} />
             <Route path="/training" component={training} />
             <Footer></Footer>
