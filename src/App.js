@@ -2,21 +2,24 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Containers from './containers/containers';
+import TextInput from './components/TextInput';
+import Button from './components/Button';
+
 
 class App extends Component {
   
   
   render() {
     return (
+      
       <Containers>
        <div className="input-group mb-3">
-        <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+          <TextInput type="number" value="" placeholder="input your score" classes="form-control"/>
         <div className="input-group-append">
-          <button className="btn btn-outline-secondary" type="button">Button</button>
+          <Button classes="btn btn-outline-secondary">Click</Button>
         </div>
       </div>
-
-       
+      
       </Containers>
     );
   }
